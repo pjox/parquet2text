@@ -1,0 +1,19 @@
+[package]
+name = "parquet2text"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = { version = "0.35.4", features = [
+    "lazy",
+    "temporal",
+    "describe",
+    "json",
+    "parquet",
+    "dtype-datetime",
+    "diagonal_concat",
+] }
+parquet = "49.0.0"
+walkdir = "2.4.0"
